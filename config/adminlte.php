@@ -243,6 +243,13 @@ return [
         // ],
 
         [
+            'text'        => 'Clientes',
+            'url'         => 'painel/customers',
+            'icon'        => 'fa fa-users',
+        ],
+
+        ['header' => 'Administrador'],
+        [
             'text'        => 'Dashboard',
             'url'         => 'painel',
             'icon'        => 'fas fa-tachometer-alt',
@@ -252,17 +259,6 @@ return [
             'url'         => 'painel/users',
             'icon'        => 'fas fa-user-plus',
             'can'         => 'edit-users',
-        ],
-        [
-            'text'        => 'Clientes',
-            'url'         => 'painel/customers',
-            'icon'        => 'fa fa-users',
-        ],
-        ['header' => 'Configurações'],
-        [
-            'text' => 'Sistema',
-            'url' => 'painel/settings',
-            'icon' => 'far fa-w fa-file'
         ],
         [
             'text' => 'Meu Perfil',

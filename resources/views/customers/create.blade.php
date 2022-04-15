@@ -108,6 +108,18 @@
                     </div>
                 </div>
                 <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Valor do Contrato</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="buscas" value="{{old('buscas')}}" class="form-control" />
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Data da Cobrança</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="buscas" value="{{old('buscas')}}" class="form-control" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
                     <label class="col-sm-2 col-form-label"></label>
                     <div class="col-sm-10">
                         <input type="submit" value="Salvar" class="btn btn-success" />
