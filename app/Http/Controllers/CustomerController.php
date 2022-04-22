@@ -141,6 +141,10 @@ class customerController extends Controller
             $customer->revisao = $data['revisao'];
             $customer->buscas = $data['buscas'];
             $customer->acao_tomada = $data['acao_tomada'];
+            $customer->valor_contrato = $data['valor_contrato'];
+            $customer->valor_aberto = $data['valor_aberto'];
+            $customer->dt_cobranca = $data['dt_cobranca'];
+            $customer->vl_cobranca = $data['vl_cobranca'];
 
 
             $customer->save();

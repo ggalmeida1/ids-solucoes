@@ -62,24 +62,42 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Total Divida</label>
-                    <div class="col-sm-10">
+                    <div class="input-group">
+                        <label class="col-sm-2 col-form-label">Total Divida</label>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">R$</span>
+                        </div>
                         <input type="text" name="total_divida" value="{{ $customer->total_divida }}"
                             class="form-control @error('total_divida') is-invalid @enderror" />
+                        <div class="input-group-append">
+                            <span class="input-group-text">.00</span>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Valor Quitado</label>
-                    <div class="col-sm-10">
+                    <div class="input-group">
+                        <label class="col-sm-2 col-form-label">Valor Quitado</label>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">R$</span>
+                        </div>
                         <input type="text" name="valor_quitado" value="{{ $customer->valor_quitado }}"
                             class="form-control @error('valor_quitado') is-invalid @enderror" />
+                        <div class="input-group-append">
+                            <span class="input-group-text">.00</span>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Entrada</label>
-                    <div class="col-sm-10">
+                    <div class="input-group">
+                        <label class="col-sm-2 col-form-label">Entrada</label>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">R$</span>
+                        </div>
                         <input type="text" name="entrada" value="{{ $customer->entrada }}"
                             class="form-control @error('entrada') is-invalid @enderror" />
+                        <div class="input-group-append">
+                            <span class="input-group-text">.00</span>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -90,12 +108,20 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Valor Parcela</label>
-                    <div class="col-sm-10">
+                    <div class="input-group">
+                        <label class="col-sm-2 col-form-label">Valor Parcela</label>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">R$</span>
+                        </div>
                         <input type="text" name="valor_parcela" value="{{ $customer->valor_parcela }}"
-                            class="form-control @error('valor_parcela') is-invalid @enderror" />
+                            class="form-control" />
+                        <div class="input-group-append">
+                            <span class="input-group-text">.00</span>
+                        </div>
                     </div>
                 </div>
+
+
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Notas</label>
                     <div class="col-sm-10">
@@ -124,22 +150,68 @@
                             class="form-control @error('buscas') is-invalid @enderror" />
                     </div>
                 </div>
-                <div class="form-group row">
 
+                <div class="form-group row">
+                    <div class="input-group">
+                        <label class="col-sm-2 col-form-label">Valor Contrato</label>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">R$</span>
+                        </div>
+                        <input type="text" name="valor_contrato" value="{{ $customer->valor_contrato }}"
+                            class="form-control">
+                        <div class="input-group-append">
+                            <span class="input-group-text">.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
                     <div class="input-group">
                         <label class="col-sm-2 col-form-label">Data Cobrança</label>
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
                         </div>
-                        <input type="text" class="form-control col-sm-10" data-inputmask-alias="datetime"
-                            data-inputmask-inputformat="mm/dd/yyyy" data-mask="" inputmode="numeric">
+                        <input type="text" name="dt_cobranca" value="{{ $customer->dt_cobranca }}"
+                            class="form-control col-sm-10" data-inputmask-alias="datetime"
+                            data-inputmask-inputformat="dd/mm/yyyy" inputmode="numeric">
                     </div>
-                    
                 </div>
+
+                <div class="form-group row">
+                    <div class="input-group">
+                        <label class="col-sm-2 col-form-label">Valor Aberto</label>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">R$</span>
+                        </div>
+                        <input type="text" name="valor_aberto" value="{{ $customer->valor_aberto }}"
+                            class="form-control">
+                        <div class="input-group-append">
+                            <span class="input-group-text">.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="input-group">
+                        <label class="col-sm-2 col-form-label">Valor Cobrança</label>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">R$</span>
+                        </div>
+                        <input type="text" name="vl_cobranca" value="{{ $customer->vl_cobranca }}"
+                            class="form-control" />
+                        <div class="input-group-append">
+                            <span class="input-group-text">.00</span>
+                        </div>
+                    </div>
+                </div>
+
         </div>
     </div>
-    <div class="form-group row">
-        <label class="col-sm-2 col-form-label"></label>
+    </div>
+
+
+
+    <div class="form-group">
         <div class="col-sm-10">
             <input type="submit" value="Salvar" class="btn btn-success" />
         </div>

@@ -26,8 +26,8 @@
                 @foreach ($customers as $customer)
                     <tr>
                         <td>{{ $customer->nome }}</td>
-                        <td>{{ \Carbon\Carbon::parse($customer->dt_cobrança)->format('d/m/Y') }}</td>
-                        <td class="badge badge-info">{{ $customer->status }}</td>
+                        <td>{{ $customer->dt_cobrança }}</td>
+                        <td class="badge-primary">{{ $customer->status }}</td>
                         <td>{{ $customer->valor_contrato }}</td>
                         <td>{{ $customer->valor_aberto }}</td>
                         <td>

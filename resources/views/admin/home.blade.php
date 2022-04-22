@@ -6,7 +6,7 @@
 
 @section('content_header')
 
-<h1>Painel de Controle</h1>
+<h1>Dashboard</h1>
 
 @endsection
 
