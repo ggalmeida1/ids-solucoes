@@ -1,4 +1,4 @@
-@extends('Site.layout')
+@extends('site.layout')
 @section('title', 'Home - IDS Soluções')
 
 @section('content')
